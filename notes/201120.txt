@@ -1,0 +1,79 @@
+201119
+
+[알림]
+cdnjs.com 
+: 자바스크립트 템플릿 모아놓은 곳. 스크립트를 내 서버에서 불러가는 게 아니라 cdn 서버에서 구동되므로 트래픽을 절약할 수 있다.
+cdn방식과 내 저장방식의 차이
+
+[코딩]
+1. 기본정보 필기
+1-1. 페이지 레이아웃
+header : 상단에 반복적으로 노출되는 영역. 레이아웃이 일정하게 유지된다.
+<->footer : 하단에 공통적으로 일정한 레이아웃. 
+section : 콘텐츠가 포함되는 영역. 여러 개 들어갈 수 있다.
+article : section 안에 존재하는 개별 세부 영역.
+aside : section 곁가지에 부수적으로 생기는 영역. section + aside = body contents
+navigation : 페이지 간 이동을 용이하게 하는 영역. 메뉴
+address : footer에 많이 넣는 영역.
+*최근 추세는 모바일을 우선으로 개발되기 때문에 article을 잘 안 씀
+
+1-2. 구조를 만들 수 있는 웹페이지는 HTML5 이후 부터다.
+nav, aside를 포함한 모든 기본 구조는 독립적으로 작용하는 태그(=시멘트 태그)이다.(div는 논시맨틱)
+cdn html5shiv : html5 하위 버전에서도 html5의 시멘트 태그를 이용할 수 있다. 
+단, internet explorer를 제외한 다른 브라우저에서 이 스크립트를 사용하면 리소스를 잡아먹는다. (필요없으니까)
+쉽게 구별하는 법 :  <div>만 보고는 안에 들어간 내용의 의미를 알 수가 없다 html5에서는 <header><footer>미리 정의된 태그를 사용하게 된다.
+>용도가 미리 정해져 있음
+기존에는 <div>태그 안에 id나 class속성으로 개발자별로 각자 이름을 정하였기 때문에 
+검색엔진이 html파일을 분석할 때 정확하게 컨텐츠를 식별하기가 힘들었다.
+html5에서는 정해진 시맨틱 태그를 사용하기로 규약을 정함.
+
+1-3. 주석 조건문 작성법
+!--[] : []안에 조건식을 만들어준다. ex) if lt IE9,
+<script src=""></script>
+<![endif]-->
+자주쓰는것 : html5shiv, fullpage
+
+1-4. viewport
+모바일, 태블릿에서는 컴퓨터 모니터와 같은 해상도를 축소해서 작은 액정에 옮겨놨기 때문에 컴퓨터의 웹 해상도에 맞춰서 출력하면 
+화면이 매우 작아져 버린다. 때문에 모바일 기기에서는 (크게 보이는) 가상의 해상도를 설정할 필요가 있는데 이것이 viewport
+1-4-1. <picture> : 기기의 해상도에 따라 서로 다른 이미지를 보여주는 반응형 시맨틱 태그. 컨텐츠와 레이아웃이 바뀐다.
+1-4-2. <source> : 닫는 태그</source>없음. 
+1-4-3. <picture> + <source>여러 개 => picture 'container' 라 명명함.
+        <picture> + <source>은 해당 브라우저 파일 포맷을 지원하는 용량 작은 이미지를,
+        <img src>는 범용 확장자 이미지를 넣는 데 쓰인다.
+1-4-4. <video> 비디오 삽입, 초기 상태에서는 컨트롤러 부재. 
+        태그 안에 controls나 autoplay attribute를 작성하면 보여지거나 자동으로 재생한다.
+        전용 포맷을 먼저 쓰고 범용 포맷을 이후에 작성하자.
+
+1-5. type
+.mp4나 .png같은 확장자를 보고 사람은 어떤 형식인지 이해하지만 시스템은 이해하지 못한다. 이를 미리 알려주려고 type attribute를 쓴다.
+또한 어떤 브라우저는 같은 동영상이라도 확장자명에 따라 지원하지 않는 것이 있을 수 있다.
+type를 작성하지 않으면 전체 picture container를 인식하지 못하는 경향이 있다(?). 뭔말이야씨발
+
+1-6. script
+브라우저에서 막아놓은 기능도 스크립트를 이용해 가능하게 만들 수 있다. ex) 크롬 브라우저에서 동영상 자동재생하기
+script 바로 아래에 들어가는 문서 설정 = 웹페이지 초기값
+function을 통해 초기값 상태에서 다른 상태로 제어할 수 있다. 이 때, input tag를 통해 script 작성 사전에 제어 장치를 먼저 만들 필요가 있다.
+
+	(제어 장치)
+    <input type="button"value="play" onclick="play();">
+    <input type="button"value="stop" onclick="stop();">
+    <input type="button"value="변형" onclick="videoTrans();">
+
+ <script>
+	(초기값)        
+        document.querySelector('video').autoplay=true;
+        document.querySelector('video').load();
+        
+	(제어)
+        function play(){
+            document.querySelector('video').play();
+        }  
+        function stop(){
+            document.querySelector('video').pause();
+        }  
+        function videoTrans(){
+            document.querySelector('video').style.width='320px';
+            document.querySelector('video').style.opacity='0.5';
+            document.querySelector('h1').style.marginLeft='-200px';
+        }
