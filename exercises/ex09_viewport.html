@@ -4,17 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
-    <link rel="short icon" href="../images/favicon_mf.png">   
+    <link rel="short icon" href="./images/favicon_mf.png">   
     <title>Document</title>
+    <style>
+        h1{
+            transition:10s;
+        }
+        video{width:640px;opacity:1;transition:0.5s}
+        /* video{width:320px;opacity:0.5;} */
+    </style>
     <!--[if lt IE8]>
     <script src="<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha512-UDJtJXfzfsiPPgnI5S1000FPLBHMhvzAMX15I+qG2E2OAzC9P1JzUwJOfnypXiOH7MRPaqzhPbBGDNNj7zBfoA==" crossorigin="anonymous"></script>"></script>
     <![endif]-->
 </head>
 <body>
+    <h1>댕댕이</h1>
     <picture>
-        <source media="(min-width: 700px)" srcset="./images/dog01.jpg">
-        <source media="(min-width: 460px)" srcset="./images/dog02.jpg">
+        <source srcset="./images/dog02.jpg" type="image/jpg">
+        <source srcset="./images/dog03.jpg" type="image/jpg">
         <img src="./images/dog03.jpg" alt="댕댕쓰">
     </picture>
+
+    <input type="button"value="play" onclick="play();">
+    <input type="button"value="stop" onclick="stop();">
+    <input type="button"value="변형" onclick="videoTrans();">
+
+    <video>
+        <source src="../media/puppy.mp4" type="video/mp4">
+            이 동영상을 보시려면 HTML5를 지원하는 브라우저가 필요합니다.
+    </video>
+
+    <script>
+        
+        document.querySelector('video').autoplay=true;
+        document.querySelector('video').load();
+
+        function play(){
+            document.querySelector('video').play();
+        }  
+        function stop(){
+            document.querySelector('video').pause();
+        }  
+        function videoTrans(){
+            document.querySelector('video').style.width='320px';
+            document.querySelector('video').style.opacity='0.5';
+            document.querySelector('h1').style.marginLeft='-200px';
+        }
+    </script>
 </body>
 </html>
