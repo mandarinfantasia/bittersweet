@@ -1,0 +1,21 @@
+*{
+    margin: 10;padding: 0;
+}
+section{
+    width:800px;margin-left:auto;margin-right: auto;border: 1px solid dimgray;border-collapse: collapse;
+}
+
+ul{
+    width:800px;margin-left:auto;margin-right: auto;border: 1px solid dimgray;border-collapse: collapse;
+}
+ul,li{
+    list-style: none;
+}
+
+strong{
+    background-color: gainsboro;
+}
+strong,span{
+    padding:16px;box-sizing:border-box;width: 200px; float: left;
+    text-align: center;border: 1px solid silver; 
+}

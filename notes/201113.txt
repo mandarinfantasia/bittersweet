@@ -1,0 +1,62 @@
+기본사항
+출결 : 되도록 0930까지. 수업은 0940 시작
+교재 : 다음주 목(11/19) 수강확정 후 배부
+수업비율 : 디자인4 퍼블리싱6
+집에서 준비할 프로그램 : 일러, 포토샵, 크롬, 비쥬얼스튜디오 코드
+
+참고
+*코로나 2단계 상승시 온라인교육 시행
+*웹에서 사용되는 해상도는 모두 72ppi이다. 출력시 300ppi이상
+*rgb(255, 255, 0)=#ffff00 / rgb(254=2^8-2, 0, 128=2^7)=#fe0080
+*메모장에서 html파일을 overwrite할 때 항상 확장자 저장명 변경을 시행해야 함. 
+*html = 컨텐츠 제작, css = 만들어진 컨텐츠의 스타일만을 지정하는
+*grid = 공간, culumn = grid를 나눈 열 갯수
+*웹페이지를 구성할 경우 컨텐츠보다는 구조(그리드)를 먼저 생각하여 설계
+*참고사이트 : pinterest.co.kr, pixabay.com
+*웹 표준 : html, css, javascript
+
+기본설치
+비쥬얼 스튜디오 코드
+extention - korean language pack / live server 5.6.1 설치
+포토샵, 일러스트레이터
+edit-preferences-general(ctrl+k)-units
+해상도 72ppi 고정. 단위 point>pixel 변경
+크롬-웹스토어
+gofullpage 확장프로그램 설치
+
+포토샵 기본
+*포토샵 공간 구성 - 좌측 : tool / 우측 : panel / 상단(상) : menu / 상단(하) : option / 문서영역 : canvas
+
+포토샵 단축키  
+alt + wheelmb(줌), v(마우스 이동), i(컬러피커), t(텍스트), 
+아무 도구에서 space(손바닥), 
+ctrl+r(눈금자), view-new guide(가이드라인)
+view-new guide layout(원하는 컬럼 갯수 자동분할) 좌우여백, gutter수치 입력
+ctrl+alt+;(가이드라인 락), ctrl+;(가이드라인 안보이게)
+m(marquee-=선택), 아무 도구에서 ctrl+d(마우스 선택), 도구없이 ctrl+d(선택 취소)
+tab(패널 숨김), f7(레이어 패널 호출)
+
+웹 작성 기본
+웹페이지 상단 제목 :  head
+본문 내용 :  body
+닫을 때 /(슬래시)
+property 구분은 :(콜론)
+property 끝맺음은 ;(세미콜론)
+문서 가장 큰 제목 : h1 (문서 내 두번 들어갈 수 없음)
+폰트지정 : font-family
+link tag는 원래 닫는 tag가 없다(</link>는 존재하지 않음)
+html 문서 내부에서 스타일을 지정했으면 in-line 
+외부(css)에서 스타일을 수입했다면 out-line.
+
+<...> : tag
+태그와 닫는 태그 사이에 컨텐츠(안녕하세요)가 들어감
+<...>~</...> : element
+<...+~> : css
+{...} : selector
+
+오늘의 숙제
+그리드 시스템을 이용하여 티스토리 편집
+
+질문
+왜 style은 head영역에서 작성되는가?
+

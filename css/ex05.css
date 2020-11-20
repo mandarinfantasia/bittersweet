@@ -1,0 +1,59 @@
+body{
+background-color: dimgray;margin-left: auto;margin-right: auto;
+}
+#wrap{
+width: 960px;background-color: #000;
+}
+#art_left{
+width: 300px;height: 1000px;padding: 20px 40px 0px 40px;margin: 0 auto;
+float: left;background-color: silver;
+}
+#art_right{
+width: 500px;height: 1000px;padding: 20px 40px 0px 40px;margin: 0 auto;
+float: right;background-color: #fff;
+}
+div{
+    padding-left: 40px;
+}
+h1{text-align: auto;cursor: pointer;}
+h1>span{
+    font-size: 32px;
+}
+#art_left>#ddingeon{
+    color: dimgray;margin-bottom: 90px;
+}
+#art_left>p{
+    margin-bottom: 30px;
+}
+hr{
+    margin: 30px 0 20px 0;
+}
+li{
+    margin-bottom: 20px;
+}
+ul>li{
+    margin-top: 20px;
+}
+ul>ul>li{
+    font-size: 14px; margin-bottom: 10px;
+}
+#wdwp{
+    padding-left: 20px;line-height: 24px;
+}
+#wdwp>strong{
+    font-weight: normal;background-color: powderblue;
+}
+table{
+    width:460px; border-collapse: collapse; 
+    margin: 0 auto;
+}
+#edu_seg{
+    background-color: lightgray; font-weight: bold; font-size: 16px;
+}
+td{
+    border: 1px solid silver; font-size: 14px; text-align: center;
+    padding: 10px 0;
+}
+a{
+    color: cadetblue; text-decoration-line: none;
+}

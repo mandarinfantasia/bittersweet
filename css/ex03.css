@@ -1,0 +1,12 @@
+table{
+    width: 800px;margin-left:auto;margin-right: auto;border: 1px solid dimgray;border-collapse: collapse;
+}
+#first_tr{
+    background-color: gainsboro;
+}
+td{
+    padding: 16px; text-align: center;border: 1px solid silver;
+}
+thead{
+    font-weight: 900px;
+}
