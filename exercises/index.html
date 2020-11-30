@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>한솔제지</title>
+    <style>
+        body{position: relative;}
+        header{height:52px;}
+        header>.container{
+            width: 339px; height:calc(100% - 26px);
+            padding: 13px 13px 13px 8px;}
+        #main_banner{height:648px;margin-bottom: 68px;}
+        #sub_banner{height:658px ;margin-bottom: 71px;}
+        #content_box{height: 389px;margin-bottom: 72px;}
+        footer{height: 190px;}
+        .container{
+            width: 360px; height:100%;
+            margin: 0 auto;
+            background-color: rgba(7, 12, 25, 0.2);}
+        #logo{width: 86px;height: 26px;
+        display: inline-block;position: relative;}
+        #tgl_btn{width: 24px;height: 26px;
+        /*display: inline-block;*/float: right;}
+        .line{width: 24px;height: 4px;background-color: #313131;
+        margin-bottom: 4.5px; border-radius: 2px;}
+        #last_line{margin-bottom: 0;}
+        #points{
+            display: block;width: 5px;float: left; margin-right: 3px;}
+        #blue_point{width: 5px;height: 5px;
+        background-color: #005a9a;margin-bottom: 5px;}
+        #green_point{width: 5px;height: 5px;
+        background-color: #008138;}
+        #logo_txt{float: left;display: block; margin-top:-8.5px;
+        color: #313131;font-family: 'Noto Sans KR';font-size: 20px;font-weight: 700;}
+        #logo_bottom{
+        clear: both; text-align: right; padding-right: 9px;
+        color: #313131;font-family: 'Noto Sans KR';font-size: 9px;font-weight: 500;
+        position: absolute; right: 0;bottom:-2px;}
+        .main_tit>h3{
+            font-family: 'Noto Sans KR';font-size: 40px;font-weight: 700;
+            text-align: center;color: #313131;}
+        .main_tit>h3>span{display: inline-block;
+            width: 48px;height: 46px;border: 6px solid #005a9a;
+            padding-left: 0px;padding-right: 0px;}
+        .main_txt>p{
+            font-family: 'Noto Sans KR';font-size: 13px;font-weight: 300;
+            text-align: center; color: #313131;}
+        .main_btn>p{
+            width: 32px;height: 32px;border: 2px solid #313131;
+            font-family: 'bahnschrift';font-size: 34px;
+            font-weight: 300; color: #313131;
+            text-align: center; line-height: 36px; margin: 0 auto;}
+        #main_slider01,#main_slider02,#main_slider03,#main_slider04,#main_slider05
+        {position: relative;}  
+        #main_tit{top: 140px;left: 0;right: 0;}  
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+        <div class="container">
+            <div id="logo">
+                <div id="logo_top">
+                    <span id="points">
+                        <div id="blue_point"></div>
+                        <div id="green_point"></div>
+                    </span>
+                    <span id="logo_txt">Hansol</span>
+                </div>
+                <div id="logo_bottom">한솔제지</div>
+            </div>
+            <div id="tgl_btn">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line" id="last_line"></div>
+            </div>
+        </div></header>
+        <!--MAIN BANNER-->
+        <section id="main_banner">
+            <div class="container">
+                <!--MAIN SLIDER1-->
+                <div id="main_slider01">
+                    <img src="./images/img_main01.jpg" alt="이미지01">
+                    <div class="main_tit">
+                        <h3><span>M</span> ROUGH</h3>
+                    </div>
+                    <div class="main_txt">
+                        <p>
+                            높은 백색도와 풍부한 질감이 특징인<br>
+                            러프그로스지입니다.<br>
+                            선명한 인쇄성과 안정적인 후가공이 장점입니다.
+                        </p>
+                    </div>
+                    <div class="main_btn">
+                        <p>></p>
+                    </div>
+                </div>
+                <!--MAIN SLIDER2-->
+                <div id="main_slider02">
+                    <img src="./images/img_main02.jpg" alt="이미지02">
+                    <div class="main_tit">
+                        <h3>앙상블E클래스</h3>
+                    </div>
+                    <div class="main_txt">
+                        <p>
+                            앙상블E클래스는 백색도, 인쇄성, 러프감<br>
+                            모두 우수한 프리미엄 인쇄용지입니다.<br>
+                            탁월한 색상과 이미지 재현력,
+                            뛰어난 부피감을 가지고 있어<br>
+                            인쇄물을 더욱 고급스럽게 만들어 줍니다.<br>
+                            특히 획기적인 잉크 건조 속도는<br>
+                            인쇄 작업 시간을 단축시켜 줍니다.  
+                        </p>
+                    </div>
+                    <div class="main_btn">
+                        <p>></p>
+                    </div>
+                </div>
+                <!--MAIN SLIDER3-->
+                <div id="main_slider03">
+                    <img src="./images/img_main03.jpg" alt="이미지03">
+                    <div class="main_tit">
+                        <h3>Hi-Q AB플러스</h3>
+                    </div>
+                    <div class="main_txt">
+                        <p>
+                            100% 천연 펄프를 사용한 무형광 용지입니다.<br> 
+                            우수한 인쇄적성과 높은 강도,<br>  
+                            고급스러운 표면을 가지고 있어<br> 
+                            화장품, 의약품, 고급 포장재, 식품 포장재로 사용됩니다.   
+                        </p>
+                    </div>
+                    <div class="main_btn">
+                        <p>></p>
+                    </div>
+                </div>
+                <!--MAIN SLIDER4-->
+                <div id="main_slider04">
+                    <img src="./images/img_main04.jpg" alt="이미지04">
+                    <div class="main_tit">
+                        <h3>PROTEGO</h3>
+                    </div>
+                    <div class="main_txt">
+                        <p>
+                            친환경 종이 포장재, 프로테고.<br>
+                            종이 표면에 특수 배리어 코팅을 접목하여 플라스틱이나<br>
+                            알루미늄을 대체할 수 있습니다.<br>
+                            이제 친환경은 선택이 아닌 우리의 몫입니다.   
+                        </p>
+                    </div>
+                    <div class="main_btn">
+                        <p>></p>
+                    </div>
+                </div>
+                <!--MAIN SLIDER5-->
+                <div id="main_slider05">
+                    <img src="./images/img_main05.jpg" alt="이미지05">
+                    <div class="main_tit">
+                        <h3>한솔감열지Green</h3>
+                    </div>
+                    <div class="main_txt">
+                        <p>
+                            비스페놀A를 함유하지 않은<br>
+                            유해물질이 없는 무독성 감열지입니다.<br>
+                            POS 영수증, ATM등 일상생활에서 쉽게 만날 수 있습니다.<br>   
+                        </p>
+                    </div>
+                    <div class="main_btn">
+                        <p>></p>
+                    </div>
+                </div>
+            </div></section>
+            <!--SUB BANNER-->
+        <section id="sub_banner"><div class="container"></div></section>
+        <section id="content_box"><div class="container"></div></section>
+        <footer><div class="container"></div></footer>
+    </div>
+</body>
+</html>
