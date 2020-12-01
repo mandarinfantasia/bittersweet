@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../images/favicon_mf.png">
+    <title>Document</title>
+    <style>
+        body{position: relative;}
+        div{background-color: #ff0000;
+            width: 200px;height: 200px; border-radius: 100px;
+            line-height: 200px; text-align: center;
+            display: inline-block;
+            position: absolute; left: -200px;
+        }
+        div:hover{
+            background-color: #ffff00;
+            position: absolute; left: 100px;top: 100px;
+        }
+        /*body::before{position: relative;
+            width: 200px;height: 200px; border-radius: 100px;
+            line-height: 200px; text-align: center;
+            background-color: #00ff00;
+            display: inline-block; clear: both;
+            content:'누르세요';
+        }*/
+        body::after{
+            width: 200px;height: 200px; border-radius: 100px;
+            line-height: 200px; text-align: center;
+            background-color: #00ffff;
+            display: inline-block;
+            position: absolute; left: -200px;
+            content:'그건 제 잔상입니다.';
+        }
+    </style>
+</head>
+<body>
+    <div>뭘 누르시는 겁니까?</div>
+</body>
+</html>
