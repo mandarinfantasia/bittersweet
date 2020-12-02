@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../images/favicon_mf.png">
+    <title>가로배치</title>
+    <style>
+        h2{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+        #box{
+            width: 300px;height: 100px;font-family:'Courier New', Courier, monospace;
+            background-color: lightcyan; border: 1px dashed #000; }
+        #box>div{display: inline-block;}
+        #box01,#box04, #box07{
+            width: 100px;height: 100px;background-color: azure;}
+        #box02, #box05, #box08{
+            width:100px; height: 100px;background-color:aliceblue;}
+        #box03, #box06, #box09{
+            width: 100px;height: 100px;background-color:ghostwhite;}
+        #box04, #box05, #box06{
+            width: 50px;float: left;}
+        #par_box{
+            width: 150px;float: right;}
+        #box07, #box08, #box09{
+            width: 50px;float: left;}
+        #box10{
+            float: left; background-color: #f00;}
+        #box11{
+            float: right;}
+        /*#box12{
+            clear: both;}*/
+        .clearfix::after{
+            content:''; display: block;clear: both;}
+    </style>
+</head>
+<body>
+    <h2>inline</h2>
+    <div id="box">
+        <div id="box01">01</div><div id="box02">02</div><div id="box03">03</div>
+    </div>
+    <h2>float:left</h2>
+    <div id="box">
+        <div id="box04">04</div>
+        <div id="box05">05</div>
+        <div id="box06">06</div>
+    </div>
+    <h2>float:right</h2>
+    <div id="box">
+        <div id="par_box">
+            <div id="box07">07</div>
+            <div id="box08">08</div>
+            <div id="box09">09</div>
+        </div>
+    </div>
+    <h2>clearfix</h2>
+    <div id="box">
+        <div class="clearfix">
+            <div id="box10">10</div>
+            <div id="box11">11</div>
+        </div>
+        <div id="box12">12</div>
+    </div>
+</body>
+</html>
