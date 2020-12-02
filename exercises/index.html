@@ -4,61 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <!--박스슬라이더-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>  
+    <script>
+      $(document).ready(function(){
+        $('.slider').bxSlider();      });
+    </script>
+    박스슬라이더 끝-->
     <title>한솔제지</title>
-    <style>
-        body{position: relative;}
-        header{height:52px;}
-        header>.container{
-            width: 339px; height:calc(100% - 26px);
-            padding: 13px 13px 13px 8px;}
-        #main_banner{height:648px;margin-bottom: 68px;}
-        #sub_banner{height:658px ;margin-bottom: 71px;}
-        #content_box{height: 389px;margin-bottom: 72px;}
-        footer{height: 190px;}
-        .container{
-            width: 360px; height:100%;
-            margin: 0 auto;
-            background-color: rgba(7, 12, 25, 0.2);}
-        #logo{width: 86px;height: 26px;
-        display: inline-block;position: relative;}
-        #tgl_btn{width: 24px;height: 26px;
-        /*display: inline-block;*/float: right;}
-        .line{width: 24px;height: 4px;background-color: #313131;
-        margin-bottom: 4.5px; border-radius: 2px;}
-        #last_line{margin-bottom: 0;}
-        #points{
-            display: block;width: 5px;float: left; margin-right: 3px;}
-        #blue_point{width: 5px;height: 5px;
-        background-color: #005a9a;margin-bottom: 5px;}
-        #green_point{width: 5px;height: 5px;
-        background-color: #008138;}
-        #logo_txt{float: left;display: block; margin-top:-8.5px;
-        color: #313131;font-family: 'Noto Sans KR';font-size: 20px;font-weight: 700;}
-        #logo_bottom{
-        clear: both; text-align: right; padding-right: 9px;
-        color: #313131;font-family: 'Noto Sans KR';font-size: 9px;font-weight: 500;
-        position: absolute; right: 0;bottom:-2px;}
-        .main_tit>h3{
-            font-family: 'Noto Sans KR';font-size: 40px;font-weight: 700;
-            text-align: center;color: #313131;}
-        .main_tit>h3>span{display: inline-block;
-            width: 48px;height: 46px;border: 6px solid #005a9a;
-            padding-left: 0px;padding-right: 0px;}
-        .main_txt>p{
-            font-family: 'Noto Sans KR';font-size: 13px;font-weight: 300;
-            text-align: center; color: #313131;}
-        .main_btn>p{
-            width: 32px;height: 32px;border: 2px solid #313131;
-            font-family: 'bahnschrift';font-size: 34px;
-            font-weight: 300; color: #313131;
-            text-align: center; line-height: 36px; margin: 0 auto;}
-        #main_slider01,#main_slider02,#main_slider03,#main_slider04,#main_slider05
-        {position: relative;}  
-        #main_tit{top: 140px;left: 0;right: 0;}  
-    </style>
 </head>
 <body>
     <div id="wrap">
@@ -82,12 +41,12 @@
         </div></header>
         <!--MAIN BANNER-->
         <section id="main_banner">
-            <div class="container">
+            <div class="container slider">
                 <!--MAIN SLIDER1-->
-                <div id="main_slider01">
+                <div class="main_slider" id="main_slider01">
                     <img src="./images/img_main01.jpg" alt="이미지01">
                     <div class="main_tit">
-                        <h3><span>M</span> ROUGH</h3>
+                        <h3 id="first_title">M ROUGH</h3>
                     </div>
                     <div class="main_txt">
                         <p>
@@ -101,7 +60,7 @@
                     </div>
                 </div>
                 <!--MAIN SLIDER2-->
-                <div id="main_slider02">
+                <div class="main_slider">
                     <img src="./images/img_main02.jpg" alt="이미지02">
                     <div class="main_tit">
                         <h3>앙상블E클래스</h3>
@@ -122,7 +81,7 @@
                     </div>
                 </div>
                 <!--MAIN SLIDER3-->
-                <div id="main_slider03">
+                <div class="main_slider">
                     <img src="./images/img_main03.jpg" alt="이미지03">
                     <div class="main_tit">
                         <h3>Hi-Q AB플러스</h3>
@@ -140,7 +99,7 @@
                     </div>
                 </div>
                 <!--MAIN SLIDER4-->
-                <div id="main_slider04">
+                <div class="main_slider">
                     <img src="./images/img_main04.jpg" alt="이미지04">
                     <div class="main_tit">
                         <h3>PROTEGO</h3>
@@ -158,7 +117,7 @@
                     </div>
                 </div>
                 <!--MAIN SLIDER5-->
-                <div id="main_slider05">
+                <div class="main_slider">
                     <img src="./images/img_main05.jpg" alt="이미지05">
                     <div class="main_tit">
                         <h3>한솔감열지Green</h3>
@@ -174,10 +133,118 @@
                         <p>></p>
                     </div>
                 </div>
-            </div></section>
+            </div>
+        </section>
             <!--SUB BANNER-->
-        <section id="sub_banner"><div class="container"></div></section>
-        <section id="content_box"><div class="container"></div></section>
+        <section id="sub_banner">
+            <div class="container">
+                <!--SUB SLIDER1-->
+                <div class="sub_slider" id="sub_slider01">
+                    <img src="./images/img_sub01.jpg" alt="이미지01">
+                    <div class="sub_tit">
+                        <h3>
+                           한솔제지는<br>
+                           국내 제지산업의<br>
+                           중심입니다. 
+                        </h3>
+                    </div>
+                    <div class="sub_txt">
+                        <p>
+                            플라스틱이나 금속의 광물질과는 달리<br>
+                            종이는 우리에게 늘 따숩고 정겨운 촉감을 준다.<br>
+                            문방사우의 하나인 이 종이야말로 <br>
+                            시와 서화를 담는 꿈의 그릇이 아니겠는가.<br><br>
+                            <span>초대 문화부 장관 이어령, 한솔 40년 사사 축사 중</span>
+                        </p>
+                    </div>
+                    <div class="sub_btn">
+                        <p>한솔제지 소개<!--<span>></span>--></p>
+                    </div>
+                </div>
+                <!--SUB SLIDER2-->
+                <div class="sub_slider" id="sub_slider02">
+                    <img src="./images/img_sub02.jpg" alt="이미지02">
+                    <div class="sub_tit">
+                        <h3>
+                           한솔제지는<br>
+                           국내 제지산업의<br>
+                           중심입니다. 
+                        </h3>
+                    </div>
+                    <div class="sub_txt">
+                        <p>
+                            한솔은 영원한 청년으로<br>
+                            40년의 나이테를 안에 몰래 숨기며<br>
+                            천년을 만년을 향하여 젊게 살아가는 바위 같은 나무다.<br><br>                          
+                            <span>초대 문화부 장관 이어령, 한솔 40년 사사 축사 중</span>
+                        </p>
+                    </div>
+                    <div class="sub_btn">
+                        <p>한솔제지 소개<!--<span>></span>--></p>
+                    </div>
+                </div>
+                <!--SUB SLIDER3-->
+                <div class="sub_slider" id="sub_slider03">
+                    <img src="./images/img_sub03.jpg" alt="이미지03">
+                    <div class="sub_tit">
+                        <h3>
+                           한솔제지는<br>
+                           국내 제지산업의<br>
+                           중심입니다. 
+                        </h3>
+                    </div>
+                    <div class="sub_txt">
+                        <p>
+                            한솔인은 어려움에 부닥치거나 도전을 받으면<br>
+                            철갑을 두른 듯하다는 그 소나무처럼 강철 같은 힘을 발휘한다.<br>
+                            침엽수의 날카로운 잎처럼 예리하고 섬세한 적응력으로 응전을 한다.<br><br>                            
+                            <span>초대 문화부 장관 이어령, 한솔 40년 사사 축사 중</span>
+                        </p>
+                    </div>
+                    <div class="sub_btn">
+                        <p>한솔제지 소개<!--<span>></span>--></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <!--CONTENT BOX-->
+        <section id="content_box">
+            <div class="container">
+                <div id="contentbox_tit">
+                    <p>Go together</p>
+                    <h3>
+                        한솔제지는<br>
+                        고객과 함께 성장합니다.
+                    </h3>
+                </div>
+                <!--CONTENT BOX1-->
+                <div class="content_box" id="first_con_box">
+                    <div class="con_box_tit">
+                        <h4>페이퍼넷</h4>
+                    </div>
+                    <div class="con_box_txt">
+                        <p>
+                            한솔제지는 환경변화와 고객 니즈를 반영한<br> 
+                            제품 포트폴리오 강화를 통해 <br>
+                            선진 제지기업으로서<br> 
+                            최고의 제품을 위해 노력하고 있습니다.
+                        </p>
+                    </div>
+                </div>
+                <!--CONTENT BOX2-->
+                <div class="content_box">
+                    <div class="con_box_tit">
+                        <h4>열린구매 시스템</h4>
+                    </div>
+                    <div class="con_box_txt">
+                        <p>
+                            구매관리, 운송정보, 납품실적관리를 <br>
+                            쉽고 편리하게 확인하실 수 있습니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
         <footer><div class="container"></div></footer>
     </div>
 </body>
