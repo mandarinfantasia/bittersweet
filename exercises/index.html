@@ -6,18 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/index.css">
     <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
-    <!--박스슬라이더-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>  
     <script>
-      $(document).ready(function(){
-        $('.slider').bxSlider();      });
+    $(document).ready(function(){
+        $('.slider').bxSlider({
+            mode:'horizontal', slideWidth:360, 
+            speed:500, infiniteLoop:true, auto:true, pause:4000,
+        });
+    });
     </script>
-    박스슬라이더 끝-->
     <title>한솔제지</title>
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
     <div id="wrap">
@@ -137,7 +139,7 @@
         </section>
             <!--SUB BANNER-->
         <section id="sub_banner">
-            <div class="container">
+            <div class="container slider2">
                 <!--SUB SLIDER1-->
                 <div class="sub_slider" id="sub_slider01">
                     <img src="./images/img_sub01.jpg" alt="이미지01">
@@ -258,7 +260,7 @@
                         <div id="footer_logo_bottom"><span>한솔제지</span>
                         </div>
                     </div>
-                    <div id="info_pro">개인정보처리방침
+                    <div id="info_pro"><p>개인정보처리방침</p>
                     </div>
                 </div>
                 <div id="family_site">
@@ -285,5 +287,14 @@
             </div>    
             </div></footer>
     </div>
+    <nav class="main_nav">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+    </nav>
 </body>
 </html>
